@@ -208,7 +208,7 @@ WebGIS dibangun menggunakan kombinasi teknologi pada tiga lapisan utama: **Clien
 
 ---
 
-## 1️⃣ Client Side (Frontend)
+## 1 Client Side (Frontend)
 
 Frontend bertanggung jawab pada tampilan peta dan interaksi pengguna.
 
@@ -232,7 +232,7 @@ Frontend bertanggung jawab pada tampilan peta dan interaksi pengguna.
 
 ---
 
-## 2️⃣ Server Side (Backend)
+## 2 Server Side (Backend)
 
 Backend menangani logika sistem dan pemrosesan data.
 
@@ -256,7 +256,7 @@ Backend menangani logika sistem dan pemrosesan data.
 
 ---
 
-## 3️⃣ Database Spasial
+## 3 Database Spasial
 
 Database menyimpan data geografis dan atributnya.
 
@@ -275,7 +275,7 @@ Database menyimpan data geografis dan atributnya.
 
 ---
 
-## 4️⃣ Protokol & Standar Geospasial
+## 4 Protokol & Standar Geospasial
 
 WebGIS biasanya menggunakan standar dari OGC (Open Geospatial Consortium):
 
@@ -295,7 +295,7 @@ Data spasial adalah data yang memiliki informasi lokasi atau posisi geografis di
 
 ## Jenis Utama Data Spasial
 
-### 1️⃣ Vector Data
+### 1 Vector Data
 
 Vector data menyimpan informasi lokasi dalam bentuk koordinat geografis (x, y) dan direpresentasikan sebagai geometri.
 
@@ -313,7 +313,7 @@ Vector data menyimpan informasi lokasi dalam bentuk koordinat geografis (x, y) d
 
 ---
 
-### 2️⃣ Raster Data
+### 2 Raster Data
 
 Raster data berbentuk grid atau piksel dan biasanya berupa citra atau gambar.
 
@@ -337,14 +337,14 @@ WebGIS menyediakan berbagai fitur interaktif yang memungkinkan pengguna untuk me
 
 ---
 
-### 1️⃣ Zoom dan Pan
+### 1 Zoom dan Pan
 
 - **Zoom** → Memperbesar atau memperkecil tampilan peta.
 - **Pan** → Menggeser tampilan peta ke area lain.
 
 ---
 
-### 2️⃣ Pencarian Lokasi
+### 2 Pencarian Lokasi
 
 - Nama tempat
 - Koordinat
@@ -352,7 +352,7 @@ WebGIS menyediakan berbagai fitur interaktif yang memungkinkan pengguna untuk me
 
 ---
 
-### 3️⃣ Pengelolaan Layer
+### 3 Pengelolaan Layer
 
 - Mengaktifkan atau menonaktifkan layer
 - Mengatur urutan layer
@@ -360,7 +360,7 @@ WebGIS menyediakan berbagai fitur interaktif yang memungkinkan pengguna untuk me
 
 ---
 
-### 4️⃣ Query Data
+### 4 Query Data
 
 - Klik pada objek
 - Filter berdasarkan atribut
@@ -368,7 +368,7 @@ WebGIS menyediakan berbagai fitur interaktif yang memungkinkan pengguna untuk me
 
 ---
 
-### 5️⃣ Analisis Spasial
+### 5 Analisis Spasial
 
 - Pengukuran jarak dan luas
 - Buffering (membuat zona tertentu di sekitar objek)
@@ -387,7 +387,7 @@ Client tidak mengakses database secara langsung, melainkan mengirimkan permintaa
 
 ## Fungsi API
 
-### 1️⃣ Mengambil Data Spasial
+### 1 Mengambil Data Spasial
 
 - Mengambil layer peta
 - Mengambil data koordinat
@@ -395,13 +395,13 @@ Client tidak mengakses database secara langsung, melainkan mengirimkan permintaa
 - Request data lokasi berdasarkan ID
 - Request data dalam radius tertentu
 
-### 2️⃣ Mengirim Data
+### 2 Mengirim Data
 
 - Menambahkan lokasi baru
 - Mengunggah data spasial
 - Mengirim hasil input pengguna
 
-### 3️⃣ Memperbarui Informasi
+### 3 Memperbarui Informasi
 
 - Update atribut data
 - Edit geometri (titik/garis/poligon)
@@ -418,17 +418,17 @@ Metode HTTP yang digunakan:
 
 ## Relevansi untuk QA Testing
 
-### ✅ 1. Validasi Akurasi Data
+### 1. Validasi Akurasi Data
 
 - Memastikan data yang dikirim sesuai dengan database
 - Memastikan tidak ada data yang hilang atau salah
 
-### ✅ 2. Validasi Format Respons
+### 2. Validasi Format Respons
 
 - Memastikan struktur JSON/GeoJSON sesuai standar
 - Memastikan status code HTTP sesuai (200, 404, 500, dll.)
 
-### ✅ 3. Uji Performa dan Stabilitas
+### 3. Uji Performa dan Stabilitas
 
 - Menguji waktu respons API
 - Menguji beban tinggi (load testing)
@@ -465,7 +465,7 @@ Quality Assurance (QA) berperan memastikan website berfungsi dengan baik, sesuai
 
 ---
 
-## 1️⃣ Memastikan Fungsionalitas Berjalan Sesuai Kebutuhan
+## 1 Memastikan Fungsionalitas Berjalan Sesuai Kebutuhan
 
 - Semua fitur berjalan sesuai spesifikasi
 - Tidak ada error pada proses input dan output
@@ -476,7 +476,7 @@ Quality Assurance (QA) berperan memastikan website berfungsi dengan baik, sesuai
 
 ---
 
-## 2️⃣ Menguji Tampilan dan User Interface (UI)
+## 2 Menguji Tampilan dan User Interface (UI)
 
 - Tampilan konsisten di berbagai browser
 - Responsif di desktop dan mobile
@@ -484,7 +484,7 @@ Quality Assurance (QA) berperan memastikan website berfungsi dengan baik, sesuai
 
 ---
 
-## 3️⃣ Menguji Integrasi Sistem
+## 3 Menguji Integrasi Sistem
 
 - API
 - Database
@@ -492,7 +492,7 @@ Quality Assurance (QA) berperan memastikan website berfungsi dengan baik, sesuai
 
 ---
 
-## 4️⃣ Melakukan Pengujian Performa
+## 4 Melakukan Pengujian Performa
 
 - Kecepatan loading halaman
 - Waktu respons server
@@ -500,7 +500,7 @@ Quality Assurance (QA) berperan memastikan website berfungsi dengan baik, sesuai
 
 ---
 
-## 5️⃣ Mengidentifikasi dan Mendokumentasikan Bug
+## 5 Mengidentifikasi dan Mendokumentasikan Bug
 
 - Menemukan bug
 - Menganalisis penyebabnya
@@ -509,7 +509,7 @@ Quality Assurance (QA) berperan memastikan website berfungsi dengan baik, sesuai
 
 ---
 
-## 6️⃣ Meningkatkan Kualitas dan Keamanan Sistem
+## 6 Meningkatkan Kualitas dan Keamanan Sistem
 
 - Validasi input berjalan baik
 - Tidak ada celah keamanan sederhana
