@@ -520,3 +520,98 @@ Quality Assurance (QA) berperan memastikan website berfungsi dengan baik, sesuai
 # 12. Kesimpulan
 
 WebGIS adalah sistem kompleks yang mengintegrasikan teknologi web, data spasial, dan sistem server. Pemahaman menyeluruh terhadap komponen, arsitektur, alur kerja, dan potensi permasalahan sangat penting, terutama bagi QA, untuk memastikan sistem berjalan dengan baik dan menghasilkan data yang akurat.
+
+---
+
+# Tools QA untuk Pengujian API & UI WebGIS
+
+## 1. Tools Pengujian API
+
+### Postman
+
+Postman adalah aplikasi yang digunakan oleh QA untuk melakukan pengujian layanan backend (API) tanpa harus melalui tampilan website.
+
+**Fungsi utama:**
+- Mengirim request API (GET, POST, PUT, DELETE)
+- Mengecek response JSON termasuk data koordinat dan atribut spasial
+- Memvalidasi status code API (200, 404, 500, dll)
+- Menguji parameter query seperti filter data, bounding box (bbox), layer ID, dan pagination
+- Membantu memastikan integrasi frontend dan backend berjalan dengan benar
+
+Dalam QA WebGIS, Postman menjadi tools utama untuk memastikan layanan data peta bekerja sesuai spesifikasi.
+
+---
+
+## 2. Tools Pengujian UI WebGIS
+
+### Browser + DevTools (Chrome DevTools)
+
+DevTools adalah fitur bawaan browser yang digunakan QA untuk menganalisis tampilan dan interaksi sistem secara langsung.
+
+**Fungsi utama:**
+- Melihat request API realtime dari UI melalui tab Network
+- Mengecek error JavaScript pada tab Console
+- Inspect elemen peta, layer, popup, dan komponen UI
+- Memantau loading tile peta dan performa layer
+- Menganalisis masalah tampilan dan responsivitas
+
+Dalam praktik QA, DevTools digunakan hampir setiap saat saat melakukan pengujian UI WebGIS.
+
+---
+
+## 3. Tools Dokumentasi & Test Case
+
+### Text Editor / Docs (VS Code, Notion, Google Docs, dll)
+
+Digunakan untuk mendokumentasikan seluruh aktivitas testing agar proses QA terstruktur dan mudah dilacak.
+
+**Fungsi utama:**
+- Menulis test scenario dan test case
+- Menyimpan catatan bug dan hasil pengujian
+- Membuat checklist pengujian fitur
+- Menyusun laporan testing
+
+---
+
+## 4. Tools Version Control & Laporan
+
+### GitHub
+
+GitHub digunakan sebagai tempat penyimpanan terpusat untuk semua dokumentasi dan hasil pekerjaan QA.
+
+**Fungsi utama:**
+- Menyimpan dokumentasi testing
+- Mengunggah laporan hasil pengujian
+- Melacak perubahan file (version control)
+- Mendukung kolaborasi tim
+- Kadang digunakan untuk pelaporan bug (issue tracking)
+
+
+---
+
+## 5. Tools Pemahaman Sistem
+
+### Enterprise Architect
+ 
+Enterprise Architect adalah tools pemodelan sistem yang membantu QA memahami struktur dan alur kerja aplikasi sebelum melakukan pengujian.
+
+**Fungsi utama:**
+- Memahami alur sistem secara menyeluruh
+- Melihat hubungan antara UI → API → Database
+- Menganalisis arsitektur sistem
+- Menentukan titik-titik pengujian kritis
+
+Tools ini tidak digunakan untuk testing langsung, tetapi sangat penting untuk memahami sistem sebelum QA dimulai.
+
+---
+
+## Kesimpulan
+
+Dalam QA WebGIS, tools terbagi berdasarkan perannya:
+
+- **API Testing:** memastikan layanan backend dan data spasial berjalan dengan benar.
+- **UI Testing:** memastikan tampilan peta dan interaksi pengguna berfungsi sesuai kebutuhan.
+- **Dokumentasi & Version Control:** memastikan proses testing tercatat dengan rapi.
+- **System Understanding:** membantu QA memahami sistem sebelum melakukan pengujian.
+
+Kombinasi tools ini memungkinkan proses QA WebGIS dilakukan secara sistematis, terstruktur, dan akurat.
